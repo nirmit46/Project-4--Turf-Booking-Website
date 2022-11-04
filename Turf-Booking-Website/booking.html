@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Trickshot</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/pickmeup.min.js"></script>
+    <script type="text/javascript" src="dist/handleCounter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pickmeup.css">
+    <link rel="stylesheet" type="text/css" href="css/handle-counter.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+     <script type="text/javascript" src="dist/demo.js"></script>
+    </head>
+    
+<body>
+    <header class="tm-header">
+        
+        <video class="tm-logo" width="400" height="300" autoplay loop>
+           <source src="images/logo.mp4" type="video/mp4">
+       </video>
+        <nav class="tm-nav">
+       <div>
+            <ul>
+                <li class="tm-list"><a href="index.html">Home</a></li>
+                <li class="tm-list"><a href="explore.html">Explore</a></li>
+                <li class="tm-list"><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>    
+            </div>
+        </nav>
+    </header>
+    
+    
+    
+        <section class="tm-main" >
+           <p>Booking</p>
+        </section>
+        <section class="tm-main1">
+           <div class="rules">
+            <h1>Rules :</h1>
+            <ul>
+                <li>Only 12-13 people are allowed for any booking coming from online portal</li>
+                <li>Food is not allowed on field premises</li>
+                <li>Online bookings cannot be shifted once booked online unless approved by management</li>
+                <li>No Drinking Alcohol</li>
+                <li>No Smoking</li>
+            </ul>
+            
+        </div>  <br><br>
+           <h3 style="color:rgb(255, 255, 255); justify-content:center;">Select Date</h3>
+           <form id="bookslot" method="post">
+           <input type="date" id="date1" style="height: 20px; width: 200px;" ondblclick="myFunction();myFunction1()" >
+           <div class="booking" id="booking" style="display: none;">
+            <table class="table-fill" id="morning" style="width:50% ; height: 10%;">
+                <th colspan="5" style="text-align: center;">Morning</th>
+                <tr>
+                    <td id="avail" onclick="this.style.backgroundColor = 'Green';" ondblclick="this.style.backgroundColor='white'">7:00-8:00</td>
+                    <td style="background-color: #747474; color: white;">8:00-9:00</td>
+                    <td style="background-color: #747474; color: white;">9:00-10:00</td>
+                    <td style="background-color: #747474; color: white;">10:00-11:00</td>
+                    <td style="background-color: #747474; color: white;">11:00-12:00</td>
+                </tr>
+            </table>
+            <table class="table-fill" id="afternoon" style="width:50% ; height: 10%;">
+                <th colspan="4" style="text-align: center;">Afternoon</th>
+                <tr>
+                    <td style="background-color: #747474; color: white;">12:00-01:00</td>
+                    <td id="avail" onclick="this.style.backgroundColor = 'Green';" ondblclick="this.style.backgroundColor='white'">01:00-02:00</td>
+                    <td style="background-color: #747474; color: white;">02:00-03:00</td>
+                    <td style="background-color: #747474; color: white;">03:00-04:00</td>
+                </tr>
+            </table>
+            <table class="table-fill" id="evening" style="width:50% ; height: 10%;">
+                <th colspan="4" style="text-align: center;">Evening</th>
+                <tr>
+                    <td id="avail" onclick="this.style.backgroundColor = 'Green'; runMe(this.innerHTML)" ondblclick="this.style.backgroundColor='white'">04:00-05:00</td>
+                    <td style="background-color: #747474; color: white;">05:00-06:00</td>
+                    <td id="avail" onclick="this.style.backgroundColor = 'Green';" ondblclick="this.style.backgroundColor='white'">06:00-07:00</td>
+                    <td style="background-color: #747474; color: white;">07:00-08:00</td>
+                </tr>
+            </table>
+            <table class="table-fill" id="night" style="width:50% ; height: 10%;">
+                <th colspan="4" style="text-align: center;">Night</th>
+                <tr>
+                    <td style="background-color: #747474; color: white;">08:00-09:00</td>
+                    <td onclick="this.style.backgroundColor = 'Green';" ondblclick="this.style.backgroundColor='white'">09:00-10:00</td>
+                    <td style="background-color: #747474; color: white;">10:00-11:00</td>
+                    <td style="background-color: #747474; color: white;" >11:00-12:00</td>
+                </tr>
+            </table>
+        </div>
+        
+    </section>
+      
+    <section class="tm-makeres">
+        <div class="tm-res" id="booknow" style="display: none;">
+           <div class="tm-resbutton">
+               <a href="payment.html" onclick="displaydate()"> <p>Book Now</p></a>
+            </div>
+            </div>
+            
+        </section>
+        
+    </form>
+    
+    
+    <section class="tm-booking">
+    </section>
+    <footer class="tm-footer">
+        <div class="tm-us">
+        <p class="bold">About Us</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAt TrickShot, product quality and customer satisfaction are the most important virtues to us. Each TrickShot location is carefully vetted, analyzed and monitored to ensure optimum player experience. From the parking facility to the service provided by the staff, we ensure our customers leave, only to come back. We use European artificial turf, handcrafted by the finest European Turf manufactures in the world and laid out by the most experienced turf installers in the country. All our turf comes from FIFA Recommended vendors only. </p>    
+        </div>
+       
+        <div class="tm-address">
+        <p class="bold">Address</p>
+        <p>A.C Patil College of Engineering</p>
+        <p>Kharghar Sector 4</p>
+        <p>Navi Mumbai</p>
+        <p>Phone : (+91)123456789</p>
+        <p>Email : trickshot@info.com</p>    
+        </div>
+        <br/>
+    <div class="tm-media">
+        <a href="http://www.facebook.com" target="_blank"> <img src="images/fb.png"></a>
+        <a href="http://www.linkedin.com" target="_blank"> <img src="images/linkedin.png"> </a>
+        <a href="http://www.twitter.com" target="_blank"> <img src="images/twittr.png"> </a>
+        <a href="http://www.instagram.com" target="_blank">  <img src="images/insta.png"> </a>
+        
+        </div>
+       
+
+        
+      
+    </footer>
+    
+
+    
+    </body>
+    
+</html>
+    
+

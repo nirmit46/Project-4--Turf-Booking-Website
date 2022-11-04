@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Trickshot</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/pickmeup.min.js"></script>
+    <script type="text/javascript" src="dist/handleCounter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pickmeup.css">
+    <link rel="stylesheet" type="text/css" href="css/handle-counter.min.css">
+    <link rel="stylesheet" type="text/css" href="css/payment.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+     <script type="text/javascript" src="dist/demo.js"></script>
+    </head>
+    
+<body>
+    <header class="tm-header">
+        <video class="tm-logo" width="400" height="300" autoplay loop>
+           <source src="images/logo.mp4" type="video/mp4">
+       </video>
+        <nav class="tm-nav">
+       <div>
+            <ul>
+                <li class="tm-list"><a href="index.html">Home</a></li>
+                <li class="tm-list"><a href="explore.html">Explore</a></li>
+               
+                <li class="tm-list"><a href="bb.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>    
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section class="tm-main">
+           <p>Booking</p>
+    </section>
+    
+    <div class="wrapper">
+      <h2>Payment Form</h2>
+      <form method="post" class="payment-new">
+          <h4>Account</h4>
+          <div class="input-group">
+              <div class="input-box">
+                  <input type="text" placeholder="Full Name" id="f_name" required class="f_name">
+                  <i class="fa fa-user icon"></i>
+                  <span id="spn"></span>
+              </div>
+              <div class="input-box">
+                  <input type="text" placeholder="Last Name" id="l_name" required class="l_name">
+                  <i class="fa fa-user icon"></i>
+              </div>
+          </div>
+          <div class="input-group">
+              <div class="input-box">
+                  <input type="email" placeholder="Email Adress" id="mail" required class="mail">
+                  <i class="fa fa-envelope icon"></i>
+              </div>
+          </div>
+          
+          <div class="input-group">
+              <div class="input-box">
+                  <h4>Payment Details</h4>
+                  <input type="radio" name="pay" id="bc1" checked class="radio">
+                  <label for="bc1" id="card1"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
+                  <input type="radio" name="pay" id="bc2" class="radio">
+                  <label for="bc2"><span><i class="fa fa-cc-amex  "></i> Debit Card</span></label>
+              </div>
+          </div>
+          <div class="card" id="card">
+          <div class="input-group">
+              <div class="input-box">
+                  <input type="tel" placeholder="Card Number" id="card1" required class="card1">
+                  
+                  <span class="spn"></span>
+              </div>
+          </div>
+          <div class="input-group">
+              <div class="input-box">
+                  <input type="tel" placeholder="Card CVV" id="cvv" required class="cvv">
+                 
+              </div>
+              <div class="input-box">
+                  <select required="required">
+                      <option>Jan</option>
+                      <option>Feb</option>
+                      <option>Mar</option>
+                      <option>Apr</option>
+                      <option>May</option>
+                      <option>Jun</option>
+                      <option>Jul</option>
+                      <option>Aug</option>
+                      <option>Sep</option>
+                      <option>Oct</option>
+                      <option>Nov</option>
+                      <option>Dec</option>
+                  </select>
+                  <select>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                      <option>2030</option>
+                      <option>2031</option>
+                      <option>2032</option>
+                      <option>2033</option>
+                      <option>2034</option>
+                      <option>2035</option>
+                  </select>
+              </div>
+          </div>
+          <h4 id="cart">Date:</h4>
+          <h4 id="cart1"><script> const dateend=localStorage.getItem('DATE');
+            document.getElementById("cart1").innerText=dateend;</script></h4>
+            <h4>Timeslot:</h4>
+            <h4 id="cart2">
+              <script>const y=localStorage.getItem('CELL');
+              document.getElementById("cart2").innerText=y;
+              </script>
+            </h4>
+            <h4>Price: 1800</h4>
+          <div class="input-group">
+              <div class="input-box">
+                  <button type="submit">PAY NOW</button>
+              </div>
+          </div>
+          </div>
+      </form>
+  </div>
+    
+    <br><br>
+    <footer class="tm-footer">
+        <div class="tm-us">
+        <p class="bold">About Us</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAt TrickShot, product quality and customer satisfaction are the most important virtues to us. Each TrickShot location is carefully vetted, analyzed and monitored to ensure optimum player experience. From the parking facility to the service provided by the staff, we ensure our customers leave, only to come back. We use European artificial turf, handcrafted by the finest European Turf manufactures in the world and laid out by the most experienced turf installers in the country. All our turf comes from FIFA Recommended vendors only. </p>    
+        </div>
+       
+        <div class="tm-address">
+        <p class="bold">Address</p>
+        <p>A.C Patil College of Engineering</p>
+        <p>Kharghar Sector 4</p>
+        <p>Navi Mumbai</p>
+        <p>Phone : (+91)123456789</p>
+        <p>Email : trickshot@info.com</p>    
+        </div>
+        <br/>
+    <div class="tm-media">
+        <a href="http://www.facebook.com" target="_blank"> <img src="images/fb.png"></a>
+        <a href="http://www.linkedin.com" target="_blank"> <img src="images/linkedin.png"> </a>
+        <a href="http://www.twitter.com" target="_blank"> <img src="images/twittr.png"> </a>
+        <a href="http://www.instagram.com" target="_blank">  <img src="images/insta.png"> </a>
+        
+        </div>
+       
+        
+      
+    </footer>
+    
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+
+    </body>
+    
+</html>
+    
+

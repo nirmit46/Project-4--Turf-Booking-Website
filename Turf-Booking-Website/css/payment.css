@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tm-header{
+    background: black;
+    display: block;
+    padding: 20px;
+    
+}
+
+.tm-logo{
+    align-content: center;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.tm-nav{
+   max-width: 90%;
+       border: 2px solid #3a382e;
+    display: block;
+  
+    margin: 30px auto 5px auto;
+  
+}
+
+.tm-nav div
+{
+    display: table;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.tm-nav div ul li{
+    display:inline-block;  
+   
+}
+
+
+.tm-nav div ul li a{
+    font-size: 1.8vmax;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+    
+    
+}
+.tm-nav div ul li a:hover{
+    
+    color: #ec3c6a;
+}
+
+.tm-list::after{
+    content: url("../images/circle.png");
+  
+   
+}
+
+/*header ends here and sections start*/
+
+
+/* slider */
+
+.tm-slider{
+    position: relative;
+}
+
+
+.tm-sliderimage{
+    width: 100%;
+    height: 400px;
+   display: block;
+     
+}
+
+.bold{
+    padding-bottom: 5px;
+    font-size: 3vw;  
+    font-weight:;
+}
+.simple{
+    font-size: 2.5vw;  
+}
+
+.tm-slidertext{
+ position: absolute; 
+   top: 30%; 
+  left: 50%;     
+    color: #fff;
+}
+
+
+/* room */
+
+
+.tm-rooms:focus {
+    outline: none;
+}
+.tm-rooms a:focus {
+    outline: none;
+}
+
+.tm-rooms{
+    display: block;
+    background: #353535;
+    max-width: 33.33%;
+    width: 33.33%;
+}
+
+
+.tm-rooms img{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+.tm-rooms p{
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+padding: 5%;
+
+  
+}
+
+.tm-rooms a{
+    text-decoration: none;
+}
+
+.tm-rooms a p:hover{
+    color: #ec3c6a;
+
+
+}
+
+.s{
+    padding-bottom: 1%;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* services */
+
+.tm-service{
+    max-width: 30%;
+    width: 30%;
+    margin: 1.5% 12% 1.5% 10%;  
+}
+
+.tm-servicesection{
+    display: flex;
+}
+
+.tm-serimage{
+    display: inline-block;
+    max-width: 20%;
+    width: 10%;
+    height: auto;
+padding-bottom: 10%;
+
+
+}
+
+.tm-service div{
+    display: inline-block;
+
+    max-width: 75%;
+    padding: 5%;
+}
+
+.tm-service p{
+    font-size: 1.5vmax;
+    
+}
+.tm-service .b{
+    padding-bottom: 2%;
+    font-weight: 700;
+}
+
+
+/* review */
+
+
+
+.tm-review{
+    background: #353535;
+    padding-bottom: 5%;
+    
+}
+
+.tm-review::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+.tm-revcon{
+    float: left;
+    padding-left: 5%;
+    max-width: 65%;
+}
+
+.tm-revcon .b{
+    padding: 3% 0 3% 5%;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.tm-revcon p{
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+.tm-rev{
+    padding: 3% 0 0% 5%;
+   max-width: 70%;
+ 
+}
+
+
+
+
+.tm-stars{
+ display: block;
+    padding-left: 5%;
+}
+.tm-stars img{
+    width: 4%;
+    height: auto;
+}
+
+
+
+/* Make reservation */
+
+.tm-res{
+    background: #cc4151;
+    padding: 2%;
+}
+
+
+.tm-resbutton p{
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    font-size: 2.5vw;
+     padding: 2%;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #fff;
+   
+}
+.tm-resbutton a{
+     text-decoration: none;
+}
+
+.tm-resbutton p:hover{
+    color: #ec3c6a;
+    background: #fff;
+}
+
+.tm-imgslider{
+    position: relative;
+}
+
+.left, .right{
+    position: absolute;
+    width: 1.5%;
+    max-width: 1.5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+     opacity:0;
+   
+}
+
+.left:hover, .right:hover{
+     opacity:1;
+    -webkit-transition: opacity .25s ease-in-out .0s;
+    transition: opacity .25s ease-in-out .0s;
+}
+
+.left{
+    top: 10%;
+    left: 1%;
+}
+
+.right{
+    top: 10%;
+    right: 1%;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+#scrollUp {
+  bottom: 100px;
+  right: 40px;
+  padding: 1%;
+  background: #211f17;
+    border : 3px solid;
+  color: #fff;
+   opacity: 0.7;
+    border-radius: 50%;
+    font-size: 1.5vw;
+        width: 1.5%;
+        text-align: center;
+    
+}
+
+button{
+    left: 50%;
+    
+}
+
+
+/* footer */
+
+.tm-footer{
+    background: #211f17;
+   display: block;
+   padding: 20px;
+   position: relative;
+
+}
+
+.tm-us{
+   display: inline-table;
+   max-width: 30%;
+   width: 30%;
+   margin: 2% 0 2% 4%
+}
+
+.tm-address{
+   display: inline-table;
+   max-width: 30%;
+   width: 30%;
+    margin: 2% 0 2% 25%
+}
+
+.tm-us .bold, .tm-address .bold{
+   color: #ec3c6a;
+   font-size: 1.5vw;
+   font-weight: 700;
+   padding-bottom: 4%;
+}
+
+.tm-us p, .tm-address p{
+   color: #fff;
+   font-size: 1.2vw;
+}
+
+.tm-media{
+  display: inline;
+   margin: 0 0 0 59%;
+
+
+}
+.tm-media img{
+ margin: 0.5%;
+   width: 3%;
+   height: auto;
+   
+}
+
+.tm-up
+{
+   position: absolute;
+   top: 20%;
+   right: 3%;
+   width: 3%;
+   height: auto;
+   
+}
+
+.tm-review:focus{
+   outline: none;
+}
+
+.tm-revcon:focus{
+   outline: none;
+}
+
+
+
+  
+  /* Explore page */
+
+.tm-main{
+    background: #cc4151;
+  padding: 3%;
+  height: 10%;
+}
+.tm-main p{
+    
+    max-width:14%;
+    margin: 0 auto;
+    font-size: 3vw;
+     padding: 2px;
+    color: #fff;
+    font-weight: 500;
+    
+}
+
+div.vertical-line{
+    width: 0.15%; 
+    background-color:  #ec3d68; 
+    height: 90%; 
+    position: absolute;
+       top: 6%;
+  left: 50%;
+  }
+
+
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .wrapper{
+    background-color: #fff;
+    width: 500px;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  }
+  .wrapper h2{
+    background-color: #fcfcfc;
+    color: #ec3d68;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px dotted #333;
+  }
+  h4{
+    padding-bottom: 5px;
+    color: #ec3d68;
+  }
+  .input-group{
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+  }
+  .input-box{
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+  }
+  .input-box:last-child{
+    margin-right: 12px;
+  }
+  .name,.f_name,.l_name,.mail,.cvv{
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 1px solid #00000033;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+  }
+
+  .card1{
+    padding: 14px 10px 17px 20px;
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 1px solid #00000033;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+    
+  }
+  .name:focus, .dob:focus{
+    -webkit-box-shadow:0 0 2px 1px #7ed32180;
+    -moz-box-shadow:0 0 2px 1px #7ed32180;
+    box-shadow: 0 0 2px 1px #7ed32180;
+    border: 1px solid #7ed321;
+  }
+  .input-box .icon{
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+    border: 1px solid #00000033;
+    border-right: none;
+  }
+  .name:focus+.icon,.f_name:focus+.icon,.l_name:focus+.icon,.cvv:focus+.icon,.card1:focus+.icon,.mail:focus + .icon{
+    background-color: #ec3d68;
+    border-right: 1px solid #ec3d68;
+    border: none;
+    transition: 1s;
+  }
+  .dob{
+    width: 30%;
+    padding: 14px;
+    text-align: center;
+    background-color: #fcfcfc;
+    transition: 0.3s;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    border-radius: 3px;
+  }
+  .radio{
+    display: none;
+  }
+  .input-box label{
+    width: 50%;
+    padding: 13px;
+    background-color: #fcfcfc;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: 1px solid #c0bfbf;
+  }
+  .input-box label:first-of-type{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+  }
+  .input-box label:last-of-type{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .radio:checked + label{
+    background-color: #ec3d68;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .input-box select{
+    display: inline-block;
+    width: 50%;
+    padding: 12px;
+    background-color: #fcfcfc;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .input-box select:focus{
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  button{
+    width: 100%;
+    background: transparent;
+    border: none;
+    background: #ec3d68;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.35s ease;
+  }
+  button:hover{
+    cursor: pointer;
+    background: #ec3d68;
+  }
+  .error{
+    color: red;
+  }
+  
